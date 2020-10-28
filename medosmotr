@@ -1,0 +1,13 @@
+ima = input ("имя:")
+fam = input ("фамилия:")
+vosrast = int (input ("возраст:"))
+ves = int (input ("вес:"))
+ 
+
+if vosrast<=30 and 50 < ves and 120> ves:
+        print(ima, "в хорошем состоянии")
+elif vosrast>=30 and 50 > ves or 120< ves:
+        print(ima, "требуется заняться собой")
+elif vosrast >= 40 and 50> ves or ves>120:           
+        print(ima, "требуется врачебный осмотр")
+    
