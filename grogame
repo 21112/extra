@@ -1,0 +1,16 @@
+person_1 = {"name": "","health":100,"damage":50, "armor": 1.2}
+person_2 = {"name": "","health":200,"damage":30, "armor": 1.2}
+
+def attackh (attaker, attakend):
+        pon = attaker["damage"]/attakend["armor"]
+        return int(pon)
+def attack(person_1,person_2):
+    at = person_2["health"] - attackh(person_1,person_2)
+    return int(at)
+    
+
+person_1["name"] = input("Person name: ")
+person_2["name"] = input("Person name: ")
+
+print(attack(person_1,person_2))
+print (person_2.items())
