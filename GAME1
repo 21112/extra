@@ -1,0 +1,15 @@
+print ("GAME\n")
+
+count = int(input("Number the member:"))
+
+winners= []
+
+while count>0:
+    number = input("Member number{} name:".format(count))
+    winners.append(number)
+    count-=1
+winners.reverse()
+
+result = winners[:3]
+result = "Wiiners today: {}. Congratulation!!!".format(result)
+print(result)
