@@ -1,0 +1,12 @@
+with open ("g.txt", "r") as f:
+    s = f.readline().strip() +"n"   
+k=1
+with open("dataset_3363_2.txt", "w") as w:
+    for i in range(len(s)-1):    
+        if s[i+1].isdigit() and s[i].isdigit():
+            k = int(s[i]+s[i+1])
+            w.write(s[i-1]*(k-1))           
+        else:
+            if s[i+1].isdigit():
+                k=int(s[i+1])
+                w.write(s[i]*k)
