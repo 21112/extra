@@ -12,3 +12,17 @@ userdate = input("Введите свою дату:")
 userdate1 = userdate.split(" ")
 print (day[userdate1[0]], month[userdate1[1]], userdate1[2], "года")
 
+
+
+
+d={}
+def update_dictionary(d, key, value):
+    if key in d:
+        d[key].append(value)
+
+    else:
+        if 2*key in d:
+            d[2*key].append(value)
+        else:
+            d[2*key]=[value] 
+
