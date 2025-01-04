@@ -1,0 +1,18 @@
+dna = input() + "x"
+b = 0
+x = len(dna)-1
+a = 0
+i = 0
+f=1
+while b<x:
+    
+    if dna[i] == dna[i+1]: 
+        f+=1 
+        i+=1
+          
+    else:  
+        print(dna[i],str(f),end=" ")
+        
+        i+=1
+        f=1
+    b+=1     
